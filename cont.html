@@ -1,0 +1,78 @@
+<html>
+<head>
+    <h1>CONTACT US</h1>
+    <script type="text/javascript">
+        function validate() 
+        {
+            if (document.myForm.fname.value == "") 
+            {
+                alert("First name required");
+                return false;
+            }
+            if (!/^[a-zA-Z]*$/g.test(document.myForm.fname.value)) 
+            {
+                alert("Name Invalid characters");
+                return false;
+            }
+            if (document.myForm.email.value == "") 
+            {
+                alert("EMAIL required");
+                document.myForm.email.focus();
+                return false;
+            }
+            if (!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/g.test(document.myForm.email.value)) 
+            {
+                alert("Invalid characters");
+                return false;
+            }
+          if(document.myform.confirmemail.value==""){
+            alert("verify password required");
+            return false;
+          }
+          if(email != confirmemail){
+            alert("email and confirmation email should match");
+            return false;
+          }
+           if(onclick(document.myForm.submit)){
+                alert("form submitted");
+            }
+            if(onclick(document.myForm.clear))
+            {
+                alert("form clear");
+            }
+            return (true);
+        }
+    </script>
+</head>
+<body>
+    <form  name="myForm" onsubmit="return(validate());">
+        <table cellspacing="2" cellpadding="2">
+            <tr>
+                <td align="right">First Name:</td>
+                <td><input type="text" name="fname" min="2" max="15" /></td>
+            </tr>
+            <tr>
+                <td align="right">Last Name:</td>
+                <td><input type="text" name="lname" /></td>
+            </tr>
+            <tr>
+                <td align="right">Email:</td>
+                <td><input type="text" name="email"/></td>
+            </tr>
+            <tr>
+                <td align="right">Confirmation Email:</td>
+                <td> <input type ="email" name="confirmemail"></td>
+            </tr>
+            <tr>
+                <td align="right">Description:</td>
+                <td><textarea cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><input type="submit" value="Send">
+                <input type="submit" value="Clear"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
