@@ -28,16 +28,16 @@
         background-color: rgb(253, 243, 62);
     }
 
-    .logo {
+    .logo img{
         float: left;
-        font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
+        margin-inline: 50px;
+        padding-inline: 0px;
         transition: 0.3s;
     }
 
-    .logo:hover {
-        font-size: 30px;
+    .logo img:hover {
+        width:120px;
+        height: 120px;
     }
 
     .navbar ul {
@@ -60,7 +60,7 @@
     }
 
     .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
+        color: rgb(255, 203, 16);
         font-size: 16px;
     }
 
@@ -112,14 +112,24 @@
         padding-inline: 40px;
     }
     .article {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
     }
+    .article1:hover{
+        opacity: 50%;
+    }
+    .article2:hover{
+        opacity: 50%;
+    }
+
+
 </style>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Numeromatch</div>
+            <div class="logo"><img src="logo.jpg" width="100px" height="100px"></div>
             <ul>
                 <li><a href="dsw.html">HOME</a></li>
                 <li><a href="hororscope.html">HOROSCOPE</a></li>
@@ -145,10 +155,9 @@
         </div>
         <br>
         <div class="article">
-            <a href="hororscope.html">DAILY HORRORSCOPE </a><br><br>
-        <div class="article">
-            <a href="article.html">ARTICLE  </a>
-        </div>
+            
+            <div class="article1"><a href="hororscope.html"><img src="horoscope.jpg"  ></a><br><br></div>
+            <div class="article2"><a href="article.html"><img src="whatisnumerology.jpg"  width="256px" height="185px"></a></div>
         </div>
         <br>
         <div class="login">
