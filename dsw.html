@@ -10,6 +10,71 @@
 <style>
     * {
         box-sizing: border-box;
+        background-image: linear-gradient(yellow 10%,white);
+        background-attachment: fixed ;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+        background-color: rgb(253, 243, 62);
+    }
+
+    .logo {
+        float: left;
+        font-size: 15px;
+        margin-inline: 5px;
+        padding-inline: 5px;
+        transition: 0.3s;
+    }
+
+    .logo:hover {
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        float: right;
+        padding-right: 15px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 5px;
+        font-size: 15px;
+        list-style-type: none;
+
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: rgb(171, 138, 18);
+        font-size: 16px;
+    }
+
+    .pagetitle {
+        text-align: center;
+        transition: 0.5s;
+
+    }
+
+    .catchyline {
+        color: blue;
+        text-align: center;
+        display: none;
+
+    }
+
+    .pagetitle:hover+.catchyline {
+        display: block;
     }
 
     .newsletter {
@@ -26,61 +91,13 @@
         border-style: solid;
     }
 
-    .pagetitle {
-        text-align: center;
-    }
 
-    .catchyline {
-        color: blue;
-        text-align: center;
-        display: none;
-    }
-
-    .pagetitle:hover+.catchyline {
-        display: block;
-    }
 
     .unclickablebutton {
         padding: 15px;
         text-align: center;
         box-sizing: border-box;
         border-style: solid;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px;
-        padding: 5px;
-        width: 100%;
-        background-color: rgb(253, 243, 62);
-    }
-
-    .logo {
-        float: left;
-        font-size: 15px;
-    }
-
-    .navbar ul {
-        float: right;
-
-    }
-
-    .navbar li {
-        display: inline-block;
-        margin: 5px;
-        font-size: 15px;
-        list-style-type: none;
-        transition: 1s;
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-    }
-
-    .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
     }
 </style>
 
