@@ -8,24 +8,21 @@
     <title>NumeroMatcher</title>
 </head>
 <style>
-    * {
+    body{
         box-sizing: border-box;
         background-image:url("peakpx.jpg") ;
         color: aliceblue;
         background-repeat: no-repeat;
         background-size:200%;
-        background-attachment: fixed ;
-        
+        background-attachment: fixed ;   
     }
 
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 5px;
-        padding: 5px;
         width: 100%;
-        background-color: rgb(253, 243, 62);
+        background-color: rgb(3, 3, 2);
     }
 
     .logo img{
@@ -51,11 +48,12 @@
         margin: 5px;
         font-size: 15px;
         list-style-type: none;
-
+       
     }
 
     .navbar ul li a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
     }
 
@@ -93,7 +91,9 @@
         text-align: center;
         box-sizing: border-box;
         border-style: solid;
+
     }
+  
     .unclickablebutton {
         padding: 15px;
         text-align: center;
@@ -106,10 +106,14 @@
     }
     .footers{
         text-align: center;
+        padding: 50px;
     }
+   
     .footers a, .login a, .article a{
         text-decoration-line: none;
+        color: white;
         padding-inline: 40px;
+        
     }
     .article {
         display: flex;
@@ -161,10 +165,8 @@
         </div>
         <br>
         <div class="login">
-            <a href="login.html">LOGIN  </a><br><br>
-        <div class="createaccount">
+            <a href="login.html">LOGIN </a><br><br>
             <a href="newacc.html">CREATE NEW ACCOUNT  </a>
-        </div>
         </div>
         <br>
     </main>
