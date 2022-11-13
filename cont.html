@@ -1,78 +1,149 @@
 <html>
+
 <head>
-    <h1>CONTACT US</h1>
+
     <script type="text/javascript">
-        function validate() 
-        {
-            if (document.myForm.fname.value == "") 
-            {
+        function validate() {
+            if (document.myForm.fname.value == "") {
                 alert("First name required");
                 return false;
             }
-            if (!/^[a-zA-Z]*$/g.test(document.myForm.fname.value)) 
-            {
+            if (!/^[a-zA-Z]*$/g.test(document.myForm.fname.value)) {
                 alert("Name Invalid characters");
                 return false;
             }
-            if (document.myForm.email.value == "") 
-            {
+            if (document.myForm.email.value == "") {
                 alert("EMAIL required");
                 document.myForm.email.focus();
                 return false;
             }
-            if (!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/g.test(document.myForm.email.value)) 
-            {
+            if (!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/g.test(document.myForm.email.value)) {
                 alert("Invalid characters");
                 return false;
             }
-          if(document.myform.confirmemail.value==""){
-            alert("verify password required");
-            return false;
-          }
-          if(email != confirmemail){
-            alert("email and confirmation email should match");
-            return false;
-          }
-           if(onclick(document.myForm.submit)){
+            if (document.myform.confirmemail.value == "") {
+                alert("verify password required");
+                return false;
+            }
+            if (email != confirmemail) {
+                alert("email and confirmation email should match");
+                return false;
+            }
+            if (onclick(document.myForm.submit)) {
                 alert("form submitted");
             }
-            if(onclick(document.myForm.clear))
-            {
+            if (onclick(document.myForm.clear)) {
                 alert("form clear");
             }
             return (true);
         }
     </script>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+        background-image: linear-gradient(yellow 10%, white);
+        background-attachment: fixed;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+        background-color: rgb(253, 243, 62);
+    }
+
+    .logo {
+        float: left;
+        font-size: 15px;
+        margin-inline: 5px;
+        padding-inline: 5px;
+        transition: 0.3s;
+    }
+
+    .logo:hover {
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        float: right;
+        padding-right: 15px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 5px;
+        font-size: 15px;
+        list-style-type: none;
+
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: rgb(171, 138, 18);
+        font-size: 16px;
+    }
+
+    .contact {
+        margin: 15px;
+    }
+</style>
+
 <body>
-    <form  name="myForm" onsubmit="return(validate());">
-        <table cellspacing="2" cellpadding="2">
-            <tr>
-                <td align="right">First Name:</td>
-                <td><input type="text" name="fname" min="2" max="15" /></td>
-            </tr>
-            <tr>
-                <td align="right">Last Name:</td>
-                <td><input type="text" name="lname" /></td>
-            </tr>
-            <tr>
-                <td align="right">Email:</td>
-                <td><input type="text" name="email"/></td>
-            </tr>
-            <tr>
-                <td align="right">Confirmation Email:</td>
-                <td> <input type ="email" name="confirmemail"></td>
-            </tr>
-            <tr>
-                <td align="right">Description:</td>
-                <td><textarea cols="30" rows="10"></textarea></td>
-            </tr>
-            <tr>
-                <td align="right"></td>
-                <td><input type="submit" value="Send">
-                <input type="submit" value="Clear"></td>
-            </tr>
-        </table>
-    </form>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Numeromatch</div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOROSCOPE</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <div class="contact">
+        <h2>CONTACT US</h2>
+        <form name="myForm" onsubmit="return(validate());">
+            <table cellspacing="2" cellpadding="2">
+                <tr>
+                    <td align="right">First Name:</td>
+                    <td><input type="text" name="fname" min="2" max="15" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Last Name:</td>
+                    <td><input type="text" name="lname" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Confirm Email:</td>
+                    <td> <input type="email" name="confirmemail"></td>
+                </tr>
+                <tr>
+                    <td align="right">Description:</td>
+                    <td><textarea cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right"></td>
+                    <td><input type="submit" value="Send">
+                        <input type="submit" value="Clear">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
 </body>
+
 </html>
