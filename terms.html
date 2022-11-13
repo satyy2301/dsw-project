@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumeroMatcher</title>
 </head>
 <style>
     * {
         box-sizing: border-box;
-        background-image:url("peakpx.jpg") ;
-        color: aliceblue;
-        background-repeat: no-repeat;
-        background-size:200%;
+        background-image: linear-gradient(yellow 10%,white);
         background-attachment: fixed ;
-        
     }
 
     .navbar {
@@ -60,11 +59,44 @@
         font-size: 16px;
     }
 
-    .terms {
-        margin: 15px;
+    .pagetitle {
+        text-align: center;
+        transition: 0.5s;
+
     }
-    .terms p{
-        font-size: 10px;
+
+    .catchyline {
+        color: blue;
+        text-align: center;
+        display: none;
+
+    }
+
+    .pagetitle:hover+.catchyline {
+        display: block;
+    }
+
+    .newsletter {
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        border-style: solid;
+    }
+
+    .login {
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        border-style: solid;
+    }
+
+
+
+    .unclickablebutton {
+        padding: 15px;
+        text-align: center;
+        box-sizing: border-box;
+        border-style: solid;
     }
 </style>
 
@@ -73,10 +105,10 @@
         <nav class="navbar">
             <div class="logo">Numeromatch</div>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">HOROSCOPE</a></li>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="dsw.html">HOME</a></li>
+                <li><a href="hororscope.html">HOROSCOPE</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="cont.html">CONTACT US</a></li>
             </ul>
         </nav>
         <hr>
