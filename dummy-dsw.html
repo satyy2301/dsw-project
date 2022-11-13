@@ -10,12 +10,12 @@
 <style>
     * {
         box-sizing: border-box;
-        background-image:url("peakpx.jpg") ;
+        background-image: url("peakpx.jpg");
         color: aliceblue;
         background-repeat: no-repeat;
-        background-size:200%;
-        background-attachment: fixed ;
-        
+        background-size: 200%;
+        background-attachment: fixed;
+
     }
 
     .navbar {
@@ -55,7 +55,6 @@
     }
 
     .navbar ul li a {
-        text-decoration: none;
         transition: 0.3s;
     }
 
@@ -95,6 +94,11 @@
         border-style: solid;
     }
 
+    .login a,
+    .footers a,
+    .navbar ul li a {
+        text-decoration-line: none;
+    }
 
 
     .unclickablebutton {
@@ -102,6 +106,15 @@
         text-align: center;
         box-sizing: border-box;
         border-style: solid;
+    }
+
+    .footers {
+        text-align: center;
+    }
+
+    .footers a {
+        padding-inline: 40px;
+
     }
 </style>
 
@@ -137,20 +150,21 @@
         <div class="article">articles - knowledge base material</div>
         <br>
         <div class="login">
-            <a href="login.html">LOGIN  </a><br><br>
-        <div class="createaccount">
-            <a href="newacc.html">CREATE NEW ACCOUNT  </a>
-        </div>
+            <a href="login.html">LOGIN </a><br><br>
+            <div class="createaccount">
+                <a href="newacc.html">CREATE NEW ACCOUNT </a>
+            </div>
         </div>
         <br>
     </main>
     <footer>
-        <div class="newsletter">join our newsletter - form</div>
-        <h4><a href="about.html">About Us - </a>
-            <a href="cont.html">Contact Us - </a>  
-            <a href="privacy.html">Privacy - </a>  
-            <a href="terms.html">Terms - </a></h4>
+        <div class="newsletter">join our newsletter - form</div><br>
+        <div class="footers"><a href="about.html">About Us </a>
+            <a href="cont.html">Contact Us </a>
+            <a href="privacy.html">Privacy </a>
+            <a href="terms.html">Terms </a>
+        </div>
     </footer>
 </body>
-</html>
 
+</html>
