@@ -1,0 +1,33 @@
+<html>
+<head>
+    <h1>LOGIN </h1>
+    <script type="text/javascript">
+        function validate() 
+        {
+            if (document.myForm.name.value == "") 
+            {
+                alert("name required");
+                return false;
+            }
+            if(document.myform.password.value==""){
+            alert("verify password required");
+            return false;
+          }
+        }
+        </script>
+</head>
+<body>
+    <form  name="myForm" onsubmit="return(validate());">
+        <table cellspacing="2" cellpadding="2">
+            <tr>
+                <td align="right">Name:</td>
+                <td><input type="text" name="name" min="2" max="15" /></td>
+            </tr>
+            <tr>
+                <td align="right">Password:</td>
+                <td><input type="text" name="password" /></td>
+            </tr>
+            <tr>
+            </form>
+        </body>
+        </html>
