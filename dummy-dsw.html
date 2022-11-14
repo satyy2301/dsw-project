@@ -15,6 +15,14 @@
         background-repeat: no-repeat;
         background-size: 200%;
         background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
     }
 
     .navbar {
@@ -64,7 +72,7 @@
 
     .pagetitle {
         text-align: center;
-        transition: 0.5s;
+
 
     }
 
@@ -72,7 +80,6 @@
         color: rgb(255, 255, 255);
         text-align: center;
         display: none;
-
     }
 
     .pagetitle:hover+.catchyline {
@@ -103,6 +110,7 @@
     }
 
     .card {
+        height: 200px;
         margin: 50px;
         box-shadow: 5px 5px 28px black;
         overflow: hidden;
@@ -110,19 +118,46 @@
 
     }
 
-    .intro {
+    .card img {
+        height: 200px;
+        width: 200px;
+    }
 
+    .intro {
+        width: 200px;
+        height: 50px;
         position: absolute;
-        bottom: 240px;
-        background: rgba(37, 35, 35, 0.5);
+        bottom: 238px;
+        background: rgba(27, 27, 27, 0.5);
         box-sizing: border-box;
         color: aliceblue;
+        transition: 0.3s;
 
     }
-    .card:hover .intro{
-        bottom: 240px;
-        height: 220px;
+
+    .intro p {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .card:hover .intro {
+        bottom: 238px;
+        height: 150px;
         background: black;
+        opacity: 80%;
+    }
+
+    .card:hover p {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card:hover img {
+        transform: scale(1.1) rotate(3deg);
     }
 
     .footers {
@@ -184,18 +219,17 @@
             <div class="card">
                 <img src="numerology.jpg">
                 <div class="intro">
-                    Numerology is a good thing a we 
-                it <p>
-                    gshdjgk
-                </p> </div>
+                    <h2>Numerology</h2>
+                    <p>Numerology is the belief in an occult, divine or mystical relationship between a number and one
+                        or more coinciding events.</p>
+                </div>
             </div>
             <div class="card">
                 <img src="match.jpg">
                 <div class="intro">
-                    Matchmaking  is a good thing a we 
-                    it <p>
-                        gshdjgk
-                    </p> 
+                    <h2>Matchmaking</h2>
+                    <p>Numerology is the belief in an occult, divine or mystical relationship between a number and one
+                        or more coinciding events.</p>
                 </div>
             </div>
         </div>
