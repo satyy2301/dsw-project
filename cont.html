@@ -1,7 +1,5 @@
 <html>
-
 <head>
-
     <script type="text/javascript">
         function validate() {
             if (document.myForm.fname.value == "") {
@@ -21,11 +19,16 @@
                 alert("Invalid characters");
                 return false;
             }
-            if (document.myform.confirmemail.value == "") {
-                alert("verify email required");
+            if (document.myForm.confirmemail.value == "") {
+                alert("confirm email required");
+                document.myForm.confirmemail.focus();
                 return false;
             }
-            if (email != confirmemail) {
+            if (!/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/g.test(document.myForm.confirmemail.value)) {
+                alert("Invalid characters");
+                return false;
+            }
+            if (document.myForm.email.value != document.myForm.confirmemail.value) {
                 alert("email and confirmation email should match");
                 return false;
             }
@@ -49,7 +52,6 @@
         background-attachment: fixed ;
         
     }
-
     .navbar {
         display: flex;
         align-items: center;
@@ -128,11 +130,11 @@
                 </tr>
                 <tr>
                     <td align="right">Email:</td>
-                    <td><input type="text" name="email" /></td>
+                    <td><input type="email" name="email" /></td>
                 </tr>
                 <tr>
                     <td align="right">Confirm Email:</td>
-                    <td> <input type="email" name="confirmemail"></td>
+                    <td><input type="email" name="confirmemail"/></td>
                 </tr>
                 <tr>
                     <td align="right">Description:</td>
