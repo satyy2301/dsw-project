@@ -7,32 +7,41 @@
     <title>NumeroMatcher</title>
 </head>
 <style>
-    * {
+    body {
         box-sizing: border-box;
-        background-image: linear-gradient(yellow 10%,white);
-        background-attachment: fixed ;
+        background-image: url("peakpx.jpg");
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
     }
 
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 5px;
-        padding: 5px;
         width: 100%;
-        background-color: rgb(253, 243, 62);
+        background-color: rgb(3, 3, 2);
     }
 
-    .logo {
+    .logo img {
         float: left;
-        font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
+        margin-inline: 50px;
+        padding-inline: 0px;
         transition: 0.3s;
     }
 
-    .logo:hover {
-        font-size: 30px;
+    .logo img:hover {
+        width: 120px;
+        height: 120px;
     }
 
     .navbar ul {
@@ -51,29 +60,30 @@
 
     .navbar ul li a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
     }
 
     .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
+        color: rgb(255, 203, 16);
         font-size: 16px;
     }
 
     .pagetitle {
         text-align: center;
-        transition: 0.5s;
-
     }
 
     .catchyline {
-        color: blue;
+        color: rgb(255, 255, 255);
         text-align: center;
-        display: none;
-
+        opacity: 0;  
+        height: 20px;  
     }
 
-    .pagetitle:hover+.catchyline {
-        display: block;
+    .pagetitle:hover +.catchyline {
+        opacity: 1;
+        transition: 0.5s;
+        height:100px
     }
 
     .newsletter {
@@ -88,22 +98,25 @@
         text-align: center;
         box-sizing: border-box;
         border-style: solid;
+
     }
 
-
-
     .unclickablebutton {
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .about{
         text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
     }
 </style>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Numeromatch</div>
+            <div class="logo"><img src="logo.jpg" width="100px" height="100px"></div>
             <ul>
                 <li><a href="dsw.html">HOME</a></li>
                 <li><a href="hororscope.html">HOROSCOPE</a></li>

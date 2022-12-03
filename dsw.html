@@ -8,32 +8,41 @@
     <title>NumeroMatcher</title>
 </head>
 <style>
-    * {
+    body {
         box-sizing: border-box;
-        background-image: linear-gradient(yellow 10%,white);
-        background-attachment: fixed ;
+        background-image: url("peakpx.jpg");
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
     }
 
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 5px;
-        padding: 5px;
         width: 100%;
-        background-color: rgb(253, 243, 62);
+        background-color: rgb(3, 3, 2);
     }
 
-    .logo {
+    .logo img {
         float: left;
-        font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
+        margin-inline: 50px;
+        padding-inline: 0px;
         transition: 0.3s;
     }
 
-    .logo:hover {
-        font-size: 30px;
+    .logo img:hover {
+        width: 120px;
+        height: 120px;
     }
 
     .navbar ul {
@@ -52,29 +61,30 @@
 
     .navbar ul li a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
     }
 
     .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
+        color: rgb(255, 203, 16);
         font-size: 16px;
     }
 
     .pagetitle {
         text-align: center;
-        transition: 0.5s;
-
     }
 
     .catchyline {
-        color: blue;
+        color: rgb(255, 255, 255);
         text-align: center;
-        display: none;
-
+        opacity: 0;  
+        height: 20px;  
     }
 
-    .pagetitle:hover+.catchyline {
-        display: block;
+    .pagetitle:hover +.catchyline {
+        opacity: 1;
+        transition: 0.5s;
+        height:100px
     }
 
     .newsletter {
@@ -89,19 +99,108 @@
         text-align: center;
         box-sizing: border-box;
         border-style: solid;
+
     }
+
     .unclickablebutton {
-        padding: 15px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .card {
+        height: 200px;
+        margin: 50px;
+        box-shadow: 5px 5px 28px black;
+        overflow: hidden;
+        border-radius: 10px;
+
+    }
+
+    .card img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .intro {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        bottom: 207px;
+        background: rgba(27, 27, 27, 0.5);
         box-sizing: border-box;
-        border-style: solid;
+        color: aliceblue;
+        transition: 0.3s;
+
+    }
+
+    .intro p {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .card:hover {
+        cursor: pointer;
+    }
+
+    .card:hover .intro {
+        bottom: 207px;
+        height: 150px;
+        background: black;
+        opacity: 80%;
+    }
+
+    .card:hover p {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card:hover img {
+        transform: scale(1.1) rotate(3deg);
+    }
+
+    .footers {
+        text-align: center;
+        margin-bottom: 100px;
+        padding-inline: 50px;
+    }
+
+    .footers a,
+    .login a,
+    .article a {
+        text-decoration-line: none;
+        color: white;
+        padding-inline: 40px;
+
+    }
+    .article1 img, .article2 img{
+        border-radius: 10px;
+        box-shadow: 10px 10px 50px black ;
+    }
+
+    .article {
+        display: flex;
+        justify-content: center; 
+    }
+    .article1 , .article2{
+        transition: 0.3s;
+    }
+
+    .article1:hover {
+        opacity: 50%;
+    }
+
+    .article2:hover {
+        opacity: 50%;
     }
 </style>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Numeromatch</div>
+            <div class="logo"><img src="logo.jpg" width="100px" height="100px"></div>
             <ul>
                 <li><a href="dsw.html">HOME</a></li>
                 <li><a href="hororscope.html">HOROSCOPE</a></li>
@@ -114,40 +213,59 @@
             <h1> NUMEROMATCHER
             </h1>
         </div>
-        <div class="catchyline">Welcome to numeromatcher.com. 
-            <p>Learn about matchmaking, numerology and more! How the world works around you becomes more clearer once you understand how the numerology determines it.</p>
+        <div class="catchyline">Welcome to numeromatcher.com.
+            <p>Learn about matchmaking, numerology and more! How the world works around you becomes more clearer once
+                you understand how the numerology determines it.</p>
         </div>
         <hr>
     </header>
     <br>
     <main>
         <div class="unclickablebutton">
-            <div class="Numerology"> Numerology</div>
-            <div class="mathcmaking"> mathcmaking</div>
+            <div class="card">
+                <img src="numerology.jpg">
+                <div class="intro">
+                    <h2>Numerology</h2>
+                    <p>Numerology is the belief in an occult, divine or mystical relationship between a number and one
+                        or more coinciding events.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="match.jpg">
+                <div class="intro">
+                    <h2>Matchmaking</h2>
+                    <p>Numerology is the belief in an occult, divine or mystical relationship between a number and one
+                        or more coinciding events.</p>
+                </div>
+            </div>
         </div>
+        <hr>
         <br>
         <div class="article">
-            <a href="hororscope.html">DAILY HORRORSCOPE </a><br><br>
-        <div class="article">
-            <a href="article.html">ARTICLE  </a>
-        </div>
+
+            <div class="article1"><a href="hororscope.html"><img src="horoscope.jpg"></a><br><br></div>
+            <div class="article2"><a href="article.html"><img src="whatisnumerology.jpg" width="256px"
+                        height="185px"></a></div>
         </div>
         <br>
         <div class="login">
-            <a href="login.html">LOGIN  </a><br><br>
-        <div class="createaccount">
-            <a href="newacc.html">CREATE NEW ACCOUNT  </a>
-        </div>
+            <a href="login.html">LOGIN </a><br><br>
+            <a href="newacc.html">CREATE NEW ACCOUNT </a>
         </div>
         <br>
     </main>
     <footer>
         <div class="newsletter">join our newsletter - form</div>
-        <h4><a href="about.html">About Us - </a>
-            <a href="cont.html">Contact Us - </a>  
-            <a href="privacy.html">Privacy - </a>  
-            <a href="terms.html">Terms - </a></h4>
+        <br><br>
+        <hr>
+        <div class="footers">
+            <h4><a href="about.html">About Us </a>
+                <a href="cont.html">Contact Us </a>
+                <a href="privacy.html">Privacy </a>
+                <a href="terms.html">Terms </a>
+            </h4>
+        </div>
     </footer>
 </body>
-</html>
 
+</html>
