@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumeroMatcher</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        background-image: url("peakpx.jpg");
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: rgb(3, 3, 2);
+    }
+
+    .logo img {
+        float: left;
+        margin-inline: 50px;
+        padding-inline: 0px;
+        transition: 0.3s;
+    }
+
+    .logo img:hover {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar ul {
+        float: right;
+        padding-right: 15px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        margin: 5px;
+        font-size: 15px;
+        list-style-type: none;
+
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: rgb(255, 203, 16);
+        font-size: 16px;
+    }
+
+    .pagetitle {
+        text-align: center;
+    }
+
+    .pagetitle:hover+.catchyline {
+        opacity: 1;
+        transition: 0.5s;
+        height: 100px
+    }
+
+    .article a {
+        text-decoration-line: none;
+        color: white;
+        padding-inline: 40px;
+
+    }
+
+    .article1 img,
+    .article2 img {
+        border-radius: 10px;
+        box-shadow: 10px 10px 50px black;
+    }
+
+    .article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article1,
+    .article2 {
+        transition: 0.3s;
+    }
+
+    .article1:hover {
+        opacity: 50%;
+    }
+
+    .article2:hover {
+        opacity: 50%;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="logo.jpg" width="100px" height="100px"></div>
+            <ul>
+                <li><a href="#">Name</a></li>
+                <li><a href="hororscope.html">HOROSCOPE</a></li>
+                <li><a href="cont.html">CONTACT US</a></li>
+                <li><a href="dsw.html">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="pagetitle">
+            <hr>
+            <h1> Welcome Name
+            </h1>
+            <p><b>Hope you are having a nice day </b></p>
+        </div>
+        <br>
+        <br>
+        <div class="article">
+
+            <div class="article1"><a href="hororscope.html"><img src="numerologyyour.png" width="250" height="190"></a><br><br></div>
+            <div class="article2"><a href="article.html"><img src="findmatch.png" width="256px"
+                        height="185px"></a></div>
+        </div>
+        <br>
+        <br>
+    </main>
+</body>
+
+</html>
