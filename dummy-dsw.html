@@ -196,13 +196,23 @@
         opacity: 50%;
     }
 
+    .form{
+        justify-content: center;
+        justify-items: center;
+        text-justify: center;
+    }
+
     .myForm {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             font-size: 0.8em;
             width: 20em;
             padding: 1em;
-            border: 1px solid #ccc;
+            
             justify-content: center;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         .myForm * {
@@ -233,8 +243,7 @@
         .myForm input[type="datetime-local"],
         .myForm select,
         .myForm textarea {
-            display: block;
-            width: 100%;
+            display: inline;
             border: 1px solid #ccc;
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             font-size: 0.9em;
@@ -247,12 +256,13 @@
         }
 
         .myForm button {
+
             padding: 1em;
             border-radius: 0.5em;
             background: #eee;
-            border: none;0
+            border: none;
             font-weight: bold;
-            margin-top: 1em;
+            text-align: center;
             justify-content: center;
         }
 
@@ -323,7 +333,7 @@
         <br>
     </main>
     <footer>
-        <div class="newsletter">join our newsletter - form</div>
+        <div class="newsletter">join our newsletter - form
         <div class="form">
             <form class="myForm" method="get" enctype="application/x-www-form-urlencoded"
         action="/html/codes/html_form_handler.cfm">
@@ -360,7 +370,7 @@
         <p><button>SIGN ME UP!</button></p>
 
     </form>
-        </div>
+        </div>0
         <br><br>
         <hr>
         <div class="footers">

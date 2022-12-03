@@ -12,7 +12,7 @@
         .myForm {
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             font-size: 0.8em;
-            width: 20em;
+            width: 30em;
             padding: 1em;
             border: 1px solid #ccc;
         }
@@ -43,8 +43,7 @@
         .myForm input[type="datetime-local"],
         .myForm select,
         .myForm textarea {
-            display: block;
-            width: 100%;
+            display: inline;
             border: 1px solid #ccc;
             font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             font-size: 0.9em;
@@ -77,11 +76,11 @@
     <form class="myForm" method="get" enctype="application/x-www-form-urlencoded"
         action="/html/codes/html_form_handler.cfm">
 
-        <p>
-            <label>Name
-                <input type="text" name="customer_name" required>
-            </label>
-        </p>
+        
+            
+               Name:  <input type="text" name="customer_name" required>
+            
+        
 
         <p>
             <label>Phone
