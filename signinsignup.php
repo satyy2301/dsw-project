@@ -475,27 +475,25 @@
 
 
 
-    {header("signinsignup.php");
+    header("signinsignup.php");
 
 
     ?>
     <?php
     $uname=$_POST["User"];
     $pass=$_POST["Pass"];
-    if($uname=$row)
+    if ($uname = $row) {
 
-    
-    {
-    
-    $sql5="select * from male where User=$uname and Pass=$pass";}
+        $sql5 = "select * from male where User=$uname and Pass=$pass";
 
-    $sql6="select * from female where User=$uname and Pass=$pass";
+        $sql6 = "select * from female where User=$uname and Pass=$pass";
+    }
 $result=mysqli_query($conn,$sql5,$sql6);
-if(mysqli_num_rows($result>0)
-{while($row=mysqli_fetch_assoc($result))
+if(mysqli_num_rows($result>0) )
+         while($row=mysqli_fetch_assoc($result))
     
 // function redirect(mainuserpage.html)
-    {header("maiuserpage.html");
+    header("maiuserpage.html");
 
 
     ?>
