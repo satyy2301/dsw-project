@@ -1,3 +1,4 @@
+<!--TERMSPAGE-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +8,22 @@
     <title>NumeroMatcher</title>
 </head>
 <style>
-    * {
+    body {
         box-sizing: border-box;
-        background-image: linear-gradient(yellow 10%,white);
-        background-attachment: fixed ;
+        background-image: url("peakpx.jpg");
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
     }
 
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
+    }
     .navbar {
         display: flex;
         align-items: center;
@@ -20,19 +31,20 @@
         margin: 5px;
         padding: 5px;
         width: 100%;
-        background-color: rgb(253, 243, 62);
+        background-color: rgb(3, 3, 2);
     }
 
-    .logo {
+    .logo img {
         float: left;
         font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
+        margin-inline: 50px;
+        padding-inline: 0px;
         transition: 0.3s;
     }
 
-    .logo:hover {
-        font-size: 30px;
+    .logo img:hover {
+        width: 120px;
+        height: 120px;
     }
 
     .navbar ul {
@@ -51,29 +63,31 @@
 
     .navbar ul li a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
     }
 
     .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
+        color: rgb(255, 203, 16);
         font-size: 16px;
     }
 
     .pagetitle {
         text-align: center;
-        transition: 0.5s;
-
     }
 
     .catchyline {
-        color: blue;
+        color: rgb(255,255,255);
         text-align: center;
-        display: none;
+        opacity: 0;  
+        height: 20px;  
 
     }
 
     .pagetitle:hover+.catchyline {
-        display: block;
+       opacity: 1;
+        transition: 0.5s;
+        height:100px
     }
 
     .newsletter {
@@ -93,10 +107,10 @@
 
 
     .unclickablebutton {
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 </style>
 
@@ -114,35 +128,28 @@
         <hr>
     </header>
     <div class="terms">
-        <h2>TERMS :</h2>
+        <h2 align = "center">TERMS :</h2>
 
-        <p> PLEASE READ THIS TERMS OF SERVICE AGREEMENT (THE "TERMS OF SERVICE" OR "TERMS") CAREFULLY. <br><br> BY ACCESSING IT
-            OR
-            USING THIS WEBSITE OR ANY OTHER WEBSITES OF HOROSCOPE.COM, INC., ITS AFFILIATES OR AGENTS ("COMPANY" or
-            "WE")
-            WITH LINKS TO THIS AGREEMENT (COLLECTIVELY, THE "WEBSITE") IN ANY WAY, INCLUDING USING THE SERVICES AND
-            RESOURCES AVAILABLE, ENABLED OR OFFERED BY COMPANY (EACH, A "SERVICE" AND COLLECTIVELY, THE "SERVICES"),
-            CLICKING ON THE "I ACCEPT" BUTTON, COMPLETING THE REGISTRATION PROCESS (IF REQUIRED), DOWNLOADING ANY OF
-            COMPANY'S MOBILE APPLICATIONS (EACH, AN "APPLICATION") AND/OR MERELY BROWSING THE WEBSITE, YOU ("MEMBER" OR
-            "YOU") AGREE THAT <br><br>(1) YOU HAVE READ, UNDERSTAND AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE WITHOUT
-            MODIFICATION, (2) YOU ARE OF LEGAL AGE TO FORM A BINDING CONTRACT WITH THE COMPANY, AND <br>(3) YOU HAVE
-            AUTHORITY
-            TO ENTER INTO THESE TERMS OF SERVICE. <br><br>IF YOU DO NOT WISH TO BE BOUND BY THESE TERMS OF SERVICE IN THEIR
-            ENTIRETY, YOU MAY NOT ACCESS OR USE THIS WEBSITE OR THE SERVICES.</p>
-        <p> THE SERVICES MAY CONSIST OF THE FOLLOWING, WITHOUT LIMITATION:<br><br> ASTROLOGICAL CONTENT, REPORTS, TAROT
-            READINGS,
-            FORTUNES, NUMEROLOGY, EMAIL CONSULTATIONS. THE WEBSITE ACTS SOLELY AS AN INTERFACE TO FACILITATE
-            COMMUNICATIONS
-            INITIATED BETWEEN MEMBERS AND AS A THIRD-PARTY PAYMENT NETWORK. <br><br>THE ADVISORS ARE ALSO MEMBERS OF THE SITE
-            AND
-            NOT EMPLOYEES OF THE COMPANY. <br><br>COMPANY DOES NOT VERIFY THE DEGREES, QUALIFICATIONS, CREDENTIALS OR BACKGROUND
-            OF
-            THE ADVISORS. <br><br>COMPANY DOES NOT REFER, ENDORSE, RECOMMEND, VERIFY, EVALUATE OR GUARANTEE ANY ADVICE,
-            INFORMATION
-            OR OTHER SERVICES PROVIDED BY THE ADVISORS OR BY THE COMPANY, NOR DOES IT WARRANT THE VALIDITY, ACCURACY,
-            COMPLETENESS, SAFETY, LEGALITY, QUALITY, OR APPLICABILITY OF THE CONTENT, ANYTHING SAID OR WRITTEN BY, OR
-            ANY
-            ADVICE PROVIDED BY, THE ADVISORS.</p>
+        <p align = "center"> PLEASE READ THIS TERMS OF SERVICE AGREEMENT (THE "TERMS OF SERVICE" OR "TERMS") CAREFULLY. <br><br> 
+        <p align = "center">BY ACCESSING IT OR USING THIS WEBSITE OR ANY OTHER WEBSITES OF HOROSCOPE.COM, INC., 
+                             ITS AFFILIATES OR AGENTS ("COMPANY" or"WE") WITH LINKS TO THIS AGREEMENT (COLLECTIVELY, THE "WEBSITE") 
+                             IN ANY WAY, INCLUDING USING THE SERVICES AND RESOURCES AVAILABLE, ENABLED OR OFFERED BY COMPANY 
+                             (EACH, A "SERVICE" AND COLLECTIVELY, THE "SERVICES"),CLICKING ON THE "I ACCEPT" BUTTON, COMPLETING 
+                             THE REGISTRATION PROCESS (IF REQUIRED), DOWNLOADING ANY OF COMPANY'S MOBILE APPLICATIONS 
+                             (EACH, AN "APPLICATION") AND/OR MERELY BROWSING THE WEBSITE, YOU ("MEMBER" OR"YOU") AGREE THAT </p> <br><br>
+                             (1) YOU HAVE READ, UNDERSTAND AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE WITHOUT MODIFICATION <br> 
+                             (2) YOU ARE OF LEGAL AGE TO FORM A BINDING CONTRACT WITH THE COMPANY, AND <br>(3) YOU HAVE AUTHORITY
+                             TO ENTER INTO THESE TERMS OF SERVICE. <br><br>IF YOU DO NOT WISH TO BE BOUND BY THESE TERMS OF SERVICE
+                            IN THEIR ENTIRETY, YOU MAY NOT ACCESS OR USE THIS WEBSITE OR THE SERVICES.</p> <p align = "center"> THE 
+                            SERVICES MAY CONSIST OF THE FOLLOWING, WITHOUT LIMITATION:<br><br> ASTROLOGICAL CONTENT, REPORTS, 
+                            TAROT READINGS,FORTUNES, NUMEROLOGY, EMAIL CONSULTATIONS. THE WEBSITE ACTS SOLELY AS AN INTERFACE TO 
+                            FACILITATE COMMUNICATIONS INITIATED BETWEEN MEMBERS AND AS A THIRD-PARTY PAYMENT NETWORK. <br><br>
+                            THE ADVISORS ARE ALSO MEMBERS OF THE SITE AND NOT EMPLOYEES OF THE COMPANY. <br><br>COMPANY DOES NOT VERIFY 
+                            THE DEGREES, QUALIFICATIONS, CREDENTIALS OR BACKGROUND OF THE ADVISORS. <br><br>COMPANY DOES NOT REFER, 
+                            ENDORSE, RECOMMEND, VERIFY, EVALUATE OR GUARANTEE ANY ADVICE, INFORMATION OR OTHER SERVICES PROVIDED BY THE 
+                            ADVISORS OR BY THE COMPANY, NOR DOES IT WARRANT THE VALIDITY, ACCURACY, COMPLETENESS, SAFETY, LEGALITY, 
+                            QUALITY, OR APPLICABILITY OF THE CONTENT, ANYTHING SAID OR WRITTEN BY, OR ANY ADVICE PROVIDED BY, THE 
+                            ADVISORS.</p>
     </div>
 </body>
 

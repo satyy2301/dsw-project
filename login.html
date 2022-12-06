@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!--LOGINPAGE-->
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +8,21 @@
     <title>NumeroMatcher</title>
 </head>
 <style>
-    * {
+    body {
         box-sizing: border-box;
-        background-image: linear-gradient(yellow 10%,white);
-        background-attachment: fixed ;
+        background-image: url("peakpx.jpg");
+        color: aliceblue;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header,
+    .footer {
+        margin: 0px;
+        padding: 0px;
     }
 
     .navbar {
@@ -20,19 +32,20 @@
         margin: 5px;
         padding: 5px;
         width: 100%;
-        background-color: rgb(253, 243, 62);
+        background-color: rgb(3, 3, 2);
     }
 
-    .logo {
+    .logo img {
         float: left;
         font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
+        margin-inline: 50px;
+        padding-inline: 0px;
         transition: 0.3s;
     }
 
-    .logo:hover {
-        font-size: 30px;
+    .logo img:hover {
+        width: 120px;
+        height: 120px;
     }
 
     .navbar ul {
@@ -51,29 +64,30 @@
 
     .navbar ul li a {
         text-decoration: none;
+        color: white;
         transition: 0.3s;
     }
 
     .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
+        color: rgb(255, 203, 16);
         font-size: 16px;
     }
 
     .pagetitle {
         text-align: center;
-        transition: 0.5s;
-
-    }
+        }
 
     .catchyline {
-        color: blue;
+        color: rgb(255,255,255);
         text-align: center;
-        display: none;
-
-    }
+         opacity: 0;  
+        height: 20px;
+       }
 
     .pagetitle:hover+.catchyline {
-        display: block;
+      opacity: 1;
+        transition: 0.5s;
+        height:100px
     }
 
     .newsletter {
@@ -93,10 +107,12 @@
 
 
     .unclickablebutton {
-        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    .about{
         text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
     }
 </style>
 
@@ -113,7 +129,7 @@
         </nav>
         <hr>
     </header>
-    <h1>LOGIN </h1>
+    <h1 align  = "center">LOGIN </h1>
     <script type="text/javascript">
         function validate() 
         {
@@ -133,11 +149,11 @@
     <form  name="myForm" onsubmit="return(validate());">
         <table cellspacing="2" cellpadding="2">
             <tr>
-                <td align="right">Name:</td>
+                <td align="center">Name:</td>
                 <td><input type="text" name="name" min="2" max="15" /></td>
             </tr>
             <tr>
-                <td align="right">Password:</td>
+                <td align="center">Password:</td>
                 <td><input type="text" name="password" /></td>
             </tr>
             <tr>

@@ -1,133 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NumeroMatcher</title>
-</head>
-<style>
-    * {
-        box-sizing: border-box;
-        background-image: linear-gradient(yellow 10%,white);
-        background-attachment: fixed ;
-    }
-
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5px;
-        padding: 5px;
-        width: 100%;
-        background-color: rgb(253, 243, 62);
-    }
-
-    .logo {
-        float: left;
-        font-size: 15px;
-        margin-inline: 5px;
-        padding-inline: 5px;
-        transition: 0.3s;
-    }
-
-    .logo:hover {
-        font-size: 30px;
-    }
-
-    .navbar ul {
-        float: right;
-        padding-right: 15px;
-
-    }
-
-    .navbar li {
-        display: inline-block;
-        margin: 5px;
-        font-size: 15px;
-        list-style-type: none;
-
-    }
-
-    .navbar ul li a {
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    .navbar ul li a:hover {
-        color: rgb(171, 138, 18);
-        font-size: 16px;
-    }
-
-    .pagetitle {
-        text-align: center;
-        transition: 0.5s;
-
-    }
-
-    .catchyline {
-        color: blue;
-        text-align: center;
-        display: none;
-
-    }
-
-    .pagetitle:hover+.catchyline {
-        display: block;
-    }
-
-    .newsletter {
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
-    }
-
-    .login {
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
-    }
-
-
-
-    .unclickablebutton {
-        padding: 15px;
-        text-align: center;
-        box-sizing: border-box;
-        border-style: solid;
-    }
-</style>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Numeromatch</div>
-            <ul>
-                <li><a href="dsw.html">HOME</a></li>
-                <li><a href="hororscope.html">HOROSCOPE</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-                <li><a href="cont.html">CONTACT US</a></li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
-    <div class="privacy"><h1>PRIVACY POLICY</h1>
-        <p>This Privacy Policy describes how we use, store, disclose, and process information that we obtain about you through any of our Platforms, including information that we obtain through any offering or other service that we provide, in whole or in part, through any of our Platforms. </p>
-        <p>PLEASE NOTE THAT BY USING OR ACCESSING ANY PLATFORM TO WHICH THIS PRIVACY POLICY IS POSTED OR LINKED, YOU CONSENT TO THE TERMS OF THIS PRIVACY POLICY.</p><br>
-        <p>1. WHAT TYPES OF INFORMATION DO WE COLLECT AND HOW DO WE COLLECT IT?</p>
-        <p>When you use or access any of our Platforms, we may collect a variety of information about you and others, as described below. Such information includes, but is not limited to, information about you which is in a form that permits us to identify you (your "personal data").</p><br>
-        <p>2. HOW DO WE USE INFORMATION COLLECTED ABOUT YOU?</p>
-        <p>Our primary purpose in collecting information about you in connection with your use of our Platforms is to provide you or connect you with products, services, information, and users that match your interests and preferences. However, we may use such information collected about you for a variety of commercial purposes.</p><br>
-        <p>3.HOW LONG DO WE MAINTAIN YOUR PERSONAL DATA?</p>
-        <p>We will store your personal data for no longer than is necessary for the purpose for which such personal data is processed. Please note, however, that we may retain and use your personal data as necessary to comply with our legal obligations, to resolve disputes, and to enforce our agreements and rights, or if it is not technically and reasonably feasible to remove such information from our databases, which means that we may retain and use your personal data as necessary after you stop using our Platforms. Subject to the foregoing, we will endeavor to delete your personal data promptly upon your written request.</p><br>
-        <p>4. DO WE SHARE INFORMATION ABOUT YOU WITH THIRD PARTIES FOR THEIR OWN DIRECT MARKETING PURPOSES?</p>
-        <p>No. We do not disclose your personal data to third parties for their own direct marketing purposes without your consent.</p><br>
-        <p>5. WHAT ARE THE TERMS REGARDING ANY FUTURE CHANGES TO THIS PRIVACY POLICY?</p>
-        <p>We reserve the right to update or modify this Privacy Policy from time to time, with any such changes to be effective prospectively. Please visit this web page periodically so that you will be apprised of any such changes. Your continued use of any of our Platforms after any modification to this Privacy Policy will constitute your acceptance of such modification.</p><br>
-        <p>6. WHAT LAW GOVERNS ANY DISPUTES REGARDING THIS PRIVACY POLICY?</p>
-        <p>You agree that any dispute over privacy or the terms contained in this Privacy Policy will be governed by the law of the State of California, without reference to the choice of law or conflicts of law principles thereof, and will be subject to the terms and limitations of the User Agreement or any other agreement we may have with you.We reserve the right to update or modify this Privacy Policy from time to time, with any such changes to be effective prospectively. Please visit this web page periodically so that you will be apprised of any such changes. Your continued use of any of our Platforms after any modification to this Privacy Policy will constitute your acceptance of such modification.</p><br></div>
-
-</body>
-</html>
+   <!--PRIVACYPAGE-->  
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>NumeroMatcher</title>
+   </head>
+   <style>
+        body {
+           box-sizing: border-box;
+           background-image: url("peakpx.jpg");
+           color: aliceblue;
+           background-repeat: no-repeat;
+           background-size: 200%;
+           background-attachment: fixed;
+           margin: 0px;
+           padding: 0px;
+       }
+   
+       .header,
+       .footer {
+           margin: 0px;
+           padding: 0px;
+       }
+   
+       .navbar {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 100%;
+           background-color: rgb(3, 3, 2);
+       }
+   
+       .logo img {
+           float: left;
+           font-size: 15px;
+           margin-inline: 50px;
+           padding-inline: 0px;
+           transition: 0.3s;
+       }
+   
+       .logo img:hover {
+           width: 120px;
+           height: 120px;
+       }
+   
+       .navbar ul {
+           float: right;
+           padding-right: 15px;
+   
+       }
+   
+       .navbar li {
+           display: inline-block;
+           margin: 5px;
+           font-size: 15px;
+           list-style-type: none;
+   
+       }
+   
+       .navbar ul li a {
+           text-decoration: none;
+           color:white;
+           transition: 0.3s;
+       }
+   
+       .navbar ul li a:hover {
+           color: rgb(256, 203, 16);
+           font-size: 16px;
+       }
+   
+       .pagetitle {
+           text-align: center;
+      }
+   
+       .catchyline {
+           color: rgb(255,255,255);
+           text-align: center;
+           opacity: 0;  
+           height: 20px; 
+   
+       }
+   
+       .pagetitle:hover+.catchyline {
+           opacity: 1;
+           transition: 0.5s;
+           height:100px
+       }
+   
+       .newsletter {
+           padding: 15px;
+           text-align: center;
+           box-sizing: border-box;
+           border-style: solid;
+       }
+   
+       .login {
+           padding: 15px;
+           text-align: center;
+           box-sizing: border-box;
+           border-style: solid;
+       }
+   
+       .unclickablebutton {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+   </style>
+   
+   <body>
+       <header>
+           <nav class="navbar">
+               <div class="logo">Numeromatch</div>
+               <ul>
+                   <li><a href="dsw.html">HOME</a></li>
+                   <li><a href="hororscope.html">HOROSCOPE</a></li>
+                   <li><a href="login.html">LOGIN</a></li>
+                   <li><a href="cont.html">CONTACT US</a></li>
+               </ul>
+           </nav>
+           <hr>
+       </header>
+       <div class="privacy"><h1 align = "center">PRIVACY POLICY</h1>
+           <p align = "center">This Privacy Policy describes how we use, store, disclose, and process information that we obtain about you through any of our Platforms, including information that we obtain through any offering or other service that we provide, in whole or in part, through any of our Platforms. </p>
+           <p align = "center">PLEASE NOTE THAT BY USING OR ACCESSING ANY PLATFORM TO WHICH THIS PRIVACY POLICY IS POSTED OR LINKED, YOU CONSENT TO THE TERMS OF THIS PRIVACY POLICY.</p><br>
+           <p align = "center">1. WHAT TYPES OF INFORMATION DO WE COLLECT AND HOW DO WE COLLECT IT?</p>
+           <p align = "center">When you use or access any of our Platforms, we may collect a variety of information about you and others, as described below. Such information includes, but is not limited to, information about you which is in a form that permits us to identify you (your "personal data").</p><br>
+           <p align = "center">2. HOW DO WE USE INFORMATION COLLECTED ABOUT YOU?</p>
+           <p align = "center">Our primary purpose in collecting information about you in connection with your use of our Platforms is to provide you or connect you with products, services, information, and users that match your interests and preferences. However, we may use such information collected about you for a variety of commercial purposes.</p><br>
+           <p align = "center">3.HOW LONG DO WE MAINTAIN YOUR PERSONAL DATA?</p>
+           <p align = "center">We will store your personal data for no longer than is necessary for the purpose for which such personal data is processed. Please note, however, that we may retain and use your personal data as necessary to comply with our legal obligations, to resolve disputes, and to enforce our agreements and rights, or if it is not technically and reasonably feasible to remove such information from our databases, which means that we may retain and use your personal data as necessary after you stop using our Platforms. Subject to the foregoing, we will endeavor to delete your personal data promptly upon your written request.</p><br>
+           <p align = "center">4. DO WE SHARE INFORMATION ABOUT YOU WITH THIRD PARTIES FOR THEIR OWN DIRECT MARKETING PURPOSES?</p>
+           <p align = "center">No. We do not disclose your personal data to third parties for their own direct marketing purposes without your consent.</p><br>
+           <p align = "center">5. WHAT ARE THE TERMS REGARDING ANY FUTURE CHANGES TO THIS PRIVACY POLICY?</p>
+           <p align = "center">We reserve the right to update or modify this Privacy Policy from time to time, with any such changes to be effective prospectively. Please visit this web page periodically so that you will be apprised of any such changes. Your continued use of any of our Platforms after any modification to this Privacy Policy will constitute your acceptance of such modification.</p><br>
+           <p align = "center">6. WHAT LAW GOVERNS ANY DISPUTES REGARDING THIS PRIVACY POLICY?</p>
+           <p align = "center">You agree that any dispute over privacy or the terms contained in this Privacy Policy will be governed by the law of the State of California, without reference to the choice of law or conflicts of law principles thereof, and will be subject to the terms and limitations of the User Agreement or any other agreement we may have with you.We reserve the right to update or modify this Privacy Policy from time to time, with any such changes to be effective prospectively. Please visit this web page periodically so that you will be apprised of any such changes. Your continued use of any of our Platforms after any modification to this Privacy Policy will constitute your acceptance of such modification.</p><br></div>
+   
+   </body>
+   </html>
