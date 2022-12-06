@@ -455,22 +455,6 @@
         </div>
     </div>
 
-</body>
-<script>
-    const sign_in_btn = document.querySelector("#sign-in-btn");
-    const sign_up_btn = document.querySelector("#sign-up-btn");
-    const container = document.querySelector(".container");
-
-    sign_up_btn.addEventListener("click", () => {
-        container.classList.add("sign-up-mode");
-    });
-
-    sign_in_btn.addEventListener("click", () => {
-        container.classList.remove("sign-up-mode");
-    });
-</script>
-
-
     <?php
     $uname=$_POST["Username"];
     $pass=$_POST["Password"];
@@ -490,9 +474,9 @@
 
 
 
-function redirect($C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\signinsignup.html)
-    {header('location:'.$C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\signinsignup.html);
-die();}
+
+    {header("signinsignup.php");
+
 
     ?>
     <?php
@@ -510,8 +494,26 @@ $result=mysqli_query($conn,$sql5,$sql6);
 if(mysqli_num_rows($result>0)
 {while($row=mysqli_fetch_assoc($result))
     
-function redirect($C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\maiuserpage.html)
-    {header('location:'.$C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\maiuserpage.html);
-die();}
+// function redirect(mainuserpage.html)
+    {header("maiuserpage.html");
+
 
     ?>
+    
+</body>
+<script>
+    const sign_in_btn = document.querySelector("#sign-in-btn");
+    const sign_up_btn = document.querySelector("#sign-up-btn");
+    const container = document.querySelector(".container");
+
+    sign_up_btn.addEventListener("click", () => {
+        container.classList.add("sign-up-mode");
+    });
+
+    sign_in_btn.addEventListener("click", () => {
+        container.classList.remove("sign-up-mode");
+    });
+</script>
+
+
+    
