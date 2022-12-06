@@ -420,13 +420,14 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="text" placeholder="User" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Pass" />
                     </div>
                     <input type="submit" value="Login" class="btn solid" />
+                    
                     
                 </form>
                 <form action="#" class="sign-up-form">
@@ -438,6 +439,10 @@
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
                         <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" placeholder="Gender" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
@@ -495,3 +500,50 @@
 </script>
 
 </html>
+<!DOCTYPE html>
+<body>
+    <?php
+    $uname=$_POST["Username"];
+    $pass=$_POST["Password"];
+    $email=$_POST["Email"];
+    $gender=$_POST["Gender"];
+
+
+    if ($gender='male')
+    {
+    mysqli_query($conn,"insert into male values('$uname','$pass', '$email','$gender')");
+    }
+    else if ($gender='female')
+    {
+    mysqli_query($conn,"insert into female values('$uname','$pass', '$email','$gender' )");
+    }
+    
+
+
+
+function redirect($C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\signinsignup.html)
+    {header('location:'.$C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\signinsignup.html);
+die();}
+
+    ?>
+    <?php
+    $uname=$_POST["User"];
+    $pass=$_POST["Pass"];
+    if($uname=$row)
+
+    
+    {
+    
+    $sql5="select * from male where User=$uname and Pass=$pass";}
+
+    $sql6="select * from female where User=$uname and Pass=$pass";
+$result=mysqli_query($conn,$sql5,$sql6);
+if(mysqli_num_rows($result>0)
+{while($row=mysqli_fetch_assoc($result))
+    
+function redirect($C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\maiuserpage.html)
+    {header('location:'.$C:\Users\satyy\OneDrive\Desktop\satyam\html\dsw project\dsw-project\maiuserpage.html);
+die();}
+
+
+    ?>
